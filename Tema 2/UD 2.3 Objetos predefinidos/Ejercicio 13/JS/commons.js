@@ -22,11 +22,17 @@ for (var i = 0; i < nombreCompletoConEspacios.length; i++) {
     document.write(nombreCompletoConEspacios[i] + '<br>');
 }
 
-for (var i = 0; i < nombreCompletoConEspacios.length; i++) {
-    if (nombreCompletoConEspacios[i] !== 1) {
-        document.write(nombreCompletoConEspacios[i].charAt(0));
-    } else if (nombreCompletoConEspacios[i] === 1) {
-        document.write(nombreCompletoConEspacios[i]);
-    }
-}
+document.write('<br><br>')
 
+document.write(nombreCompletoSinEspacios[0].charAt(0));
+document.write(nombreCompletoSinEspacios[1]);
+document.write(nombreCompletoSinEspacios[2].charAt(0));
+
+document.write('<br><br>')
+
+/* Que devuelva una cadena compuesta por las tres primeras letras del nombre y de los
+dos apellidos. EJ: beltudram */
+
+document.write(nombreCompletoSinEspacios[0].toString().substring(0,3));
+document.write(nombreCompletoSinEspacios[1].toString().substring(0,3));
+document.write(nombreCompletoSinEspacios[2].toString().substring(0,3));
